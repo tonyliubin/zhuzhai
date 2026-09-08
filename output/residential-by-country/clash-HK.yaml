@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   type: vless
-  server: 58.153.148.126
+  server: 6342844e-tla000-tlpfci-1jdha.hk3.hyhuawei.com
   port: 443
-  uuid: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
+  uuid: de629d50-1711-11ed-bd7c-f23c913c8d2b
   udp: true
   tls: true
   skip-cert-verify: true
@@ -19,18 +19,8 @@ proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
   type: vmess
   server: dog-hk.kunlun01dns.com
-  port: 21021
+  port: 21019
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  type: vmess
-  server: zfd-hkv1.kunlun01dns.com
-  port: 16114
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
   udp: true
@@ -43,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
