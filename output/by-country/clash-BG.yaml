@@ -5,24 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - xiaohe
-  type: vmess
-  server: 62.171.228.179
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
+  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 02 - xiaohe
   type: vless
   server: neth9.lunariai.ru
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 03 - xiaohe
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 04 - xiaohe
+  type: vless
+  server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -36,6 +47,8 @@ proxy-groups:
   - AUTO
   - 🇧🇬 BG 01 - xiaohe
   - 🇧🇬 BG 02 - xiaohe
+  - 🇧🇬 BG 03 - xiaohe
+  - 🇧🇬 BG 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -43,5 +56,7 @@ proxy-groups:
   proxies:
   - 🇧🇬 BG 01 - xiaohe
   - 🇧🇬 BG 02 - xiaohe
+  - 🇧🇬 BG 03 - xiaohe
+  - 🇧🇬 BG 04 - xiaohe
 rules:
 - MATCH,PROXIES
