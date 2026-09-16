@@ -5,19 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01 - xiaohe
-  type: vless
-  server: 171.83.48.117
-  port: 8443
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  type: vmess
+  server: 36.133.74.15
+  port: 50011
+  uuid: 9195e0f1-f466-4e69-838f-a95519b5d45e
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: kkkk-xcd.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: kkkk-xcd.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
