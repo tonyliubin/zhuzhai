@@ -20,18 +20,18 @@ proxies:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇹🇭 TH 02 - xiaohe
   type: vless
-  server: 109.66.88.158
+  server: 104.18.26.90
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
-    path: /details?ed=2560fp=chrome
+    path: /ws
     headers:
-      Host: cdn8848.776676.xyz
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 03 - xiaohe
   type: vless
   server: 103.86.49.57
