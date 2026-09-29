@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
+  server: 172.64.88.251
+  port: 8880
+  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+      Host: dry-credit-fc26.203-d8c.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
