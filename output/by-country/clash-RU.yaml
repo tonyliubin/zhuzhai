@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 HU 01 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 37.221.210.113
-  port: 8443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  server: 84.38.183.237
+  port: 443
+  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.cndyw.ggff.net
+  servername: ws.nightproducts.ru
   network: ws
   ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=random
+    path: /vless#/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
-      Host: free.cndyw.ggff.net
+      Host: 84.38.183.237
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 HU 01 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 HU 01 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
