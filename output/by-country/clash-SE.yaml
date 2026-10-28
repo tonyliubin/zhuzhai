@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 02 - xiaohe
   type: vless
   server: 193.188.21.253
   port: 14430
@@ -24,6 +17,13 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
+- name: 🇸🇪 SE 02 - xiaohe
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
 - name: 🇸🇪 SE 03 - xiaohe
   type: vless
   server: 77.110.97.245
