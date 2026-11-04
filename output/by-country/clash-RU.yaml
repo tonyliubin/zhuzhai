@@ -27,7 +27,7 @@ proxies:
       Host: lvi.su
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: 217.19.122.156
+  server: z1q3pv4g78.rucdncomp.pro
   port: 443
   uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
